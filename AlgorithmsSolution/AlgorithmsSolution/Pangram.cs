@@ -8,39 +8,40 @@ namespace AlgorithmsSolution
 {
         class Pangram
         {
-            static void Main(string[] args)
-            {
-                string inputStr = Console.ReadLine();
-                SortedDictionary<char, int> letterDict = new SortedDictionary<char, int>();
+            //static void Main(string[] args)
+            //{
+            //    string inputStr = Console.ReadLine();
+            //    SortedDictionary<char, int> letterDict = new SortedDictionary<char, int>();
 
-                inputStr = inputStr.Replace(" ", "");
+            //    inputStr = inputStr.Replace(" ", "");
 
-                if (inputStr.Length < 26)
-                {
-                    Console.WriteLine("not pangram");
+            //    if (inputStr.Length < 26)
+            //    {
+            //        Console.WriteLine("not pangram");
 
-                }
+            //    }
 
-                foreach (char c in inputStr.ToLower())
-                {
-                    if (letterDict.ContainsKey(c))
-                    {
-                        letterDict[c]++;
-                    }
-                    else
-                    {
-                        letterDict.Add(c, 1);
-                    }
-                }
+            //    foreach (char c in inputStr.ToLower())
+            //    {
+            //        if (letterDict.ContainsKey(c))
+            //        {
+            //            letterDict[c]++;
+            //        }
+            //        else
+            //        {
+            //            letterDict.Add(c, 1);
+            //        }
+            //    }
 
-                if (letterDict.Count == 26)
-                {
-                    Console.WriteLine("pangram");
-                }
-                else
-                {
-                    Console.WriteLine("not a pangram");
-                }
-            }
-        }
+            //    if (letterDict.Count == 26)
+            //    {
+            //        Console.WriteLine("pangram");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("not a pangram");
+            //    }
+            //}
+        //}
     }
+}
